@@ -1,12 +1,12 @@
-#include "Instruction_Memory.h"
+#include "IM.h"
 
-Instruction_Memory::Instruction_Memory() {
+IM::IM() {
 }
 
-Instruction_Memory::~Instruction_Memory() {
+IM::~IM() {
 }
 
-void Instruction_Memory::seperate(string tmp)
+void IM::seperate(string tmp)
 {
     if (tmp.length() != DATA_BITS)return;
 
@@ -22,9 +22,21 @@ void Instruction_Memory::seperate(string tmp)
     }
 }
 
-void Instruction_Memory::print()
+void IM::print()
 {
     cout << "rs : " << this->rs << " rt : " << this->rt << " rd : " << this->rd << endl;
 }
+
+string IM::get_rs() { return this->rs; }
+
+string IM::get_rt() { return this->rt; }
+
+string IM::get_rd() { return this->rd; }
+
+void IM::set_rs(string rs_c) { this->rs = rs_c; }
+
+void IM::set_rt(string rt_c) { this->rt = rt_c; }
+
+void IM::set_rd(string rd_c) { this->rd = rd_c; }
 
 
