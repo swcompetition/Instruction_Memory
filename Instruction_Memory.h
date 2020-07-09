@@ -9,6 +9,7 @@ class Instruction_Memory {
 private:
     string rs;
     string rt;
+    string rd;
 
 public:
     Instruction_Memory();
