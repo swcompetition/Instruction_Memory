@@ -27,7 +27,7 @@ void Instruction_Memory::print()
     cout << "rs : " << this->rs << " rt : " << this->rt << " rd : " << this->rd << endl;
 }
 
-string Instruction_Memory::get_rs() { return this->rs; }
+string Instruction_Memory::get_rs() { return this->rs; } 
 
 string Instruction_Memory::get_rt() { return this->rt; }
 
