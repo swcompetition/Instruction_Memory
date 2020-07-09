@@ -5,15 +5,15 @@ using namespace std;
 #define DATA_BITS 32
 #define LOOP 5
 
-class IM {
+class Instruction_Memory {
 private:
     string rs;
     string rt;
     string rd;
 
 public:
-    IM();
-    ~IM();
+    Instruction_Memory();
+    ~Instruction_Memory();
 
     void seperate(string tmp);
     void print();
