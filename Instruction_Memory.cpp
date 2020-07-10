@@ -11,7 +11,7 @@ void Instruction_Memory::seperate(string tmp)
     if (tmp.length() != DATA_BITS)return;
 
     int check = 6;
-    while (check < 22) {
+    while (check < 21) {
         if (check > 10 && check < 16) this->rt += tmp.at(check++);
         else if (check > 15 && check < 21) this->rd += tmp.at(check++);
         else this->rs += tmp.at(check++);
