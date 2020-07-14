@@ -6,5 +6,4 @@ int main() {
     Instruction_Memory im;
     im.seperate(tmp);
     im.print();
-
 }
