@@ -13,6 +13,7 @@ private:
     string rs;
     string rt;
     string rd;
+    string shamt;
     string ff; //function field
     Control control_class;
 
@@ -26,6 +27,7 @@ public:
     string get_rs();
     string get_rt();
     string get_rd();
+    string get_shamt();
     string get_ff();
     void set_rs(string rs);
     void set_rt(string rt);

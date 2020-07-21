@@ -14,13 +14,14 @@ void Instruction_Memory::seperate(string tmp)
     this->rs = tmp.substr(6, 5);
     this->rt = tmp.substr(11, 5);
     this->rd = tmp.substr(16, 5);
+    this->shamt = tmp.substr(21, 5);
     this->ff = tmp.substr(26);
 
 }
 
 void Instruction_Memory::print(){
     cout << "op : "<< this->op << " , rs : " << this->rs << " , rt : " << this->rt 
-        << " , rd : " << this->rd << " , fuction_field : "<< this->ff<< endl;
+        << " , rd : " << this->rd << " , shamt : "<< this->shamt<<" , fuction_field : "<< this->ff<< endl;
 }
 
 string Instruction_Memory::get_op() { return this->op; }
@@ -30,6 +31,8 @@ string Instruction_Memory::get_rs() { return this->rs; }
 string Instruction_Memory::get_rt() { return this->rt; }
 
 string Instruction_Memory::get_rd() { return this->rd; }
+
+string Instruction_Memory::get_shamt(){ return this->shamt; }
 
 string Instruction_Memory::get_ff() { return this->ff; }
 
