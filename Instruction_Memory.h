@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include <control.h>
+#include <Control.h>
 #include <string>
 using namespace std;
 
@@ -15,6 +15,8 @@ private:
     string rd;
     string shamt;
     string ff; //function field
+    string add;
+    bool address[32];
     Control control_class;
 
 public:
@@ -29,6 +31,7 @@ public:
     string get_rd();
     string get_shamt();
     string get_ff();
+    string getAddress();
     void set_rs(string rs);
     void set_rt(string rt);
     void set_rd(string rd);

@@ -2,8 +2,11 @@
 #include <iostream>
 
 int main() {
-    string tmp = "00000011101000101001100100100101";
+    string tmp = "10001111101000101001100100100101";
     Instruction_Memory im;
     im.seperate(tmp);
     im.print();
+    string adddd;
+    adddd = im.getAddress();
+    cout << adddd << endl;
 }
