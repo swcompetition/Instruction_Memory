@@ -16,13 +16,23 @@ void Instruction_Memory::seperate(string tmp)
 
     int o = 0;
     for (int i = 0; i < 6; i++) { o += pow(2, 5 - i) * (op.at(i)-'0'); }
+
+    this->add = tmp.substr(16);
+    this->rd = tmp.substr(16, 5);
+    this->shamt = tmp.substr(21, 5);
+    this->ff = tmp.substr(26); 
    
-    if (o == 35 || o == 43) { this->add = tmp.substr(16); }
-    else {
-        this->rd = tmp.substr(16, 5);
-        this->shamt = tmp.substr(21, 5);
-        this->ff = tmp.substr(26);
-    }
+    // if (o == 35 || o == 43) { 
+    //     this->add = tmp.substr(16);
+    //     this->rd = tmp.substr(16, 5);
+    //     this->shamt = tmp.substr(21, 5);
+    //     this->ff = tmp.substr(26); 
+    // }
+    // else {
+    //     this->rd = tmp.substr(16, 5);
+    //     this->shamt = tmp.substr(21, 5);
+    //     this->ff = tmp.substr(26);
+    // }
 
 
 }
